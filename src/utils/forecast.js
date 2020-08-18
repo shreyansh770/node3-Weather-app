@@ -13,7 +13,7 @@ const forecast =(latitude,longitude,callBack)=>{
       callBack("unable to find location")
   
   }else{
-       callBack(/*Undefined error*/undefined,"It is currently"+" " + response.body.current.temperature + "C")
+       callBack(/*Undefined error*/undefined,"It is currently"+" " + response.body.current.temperature + "C" + " " + " the Air Pressure is" +" "+ response.body.current.pressure )
         
   }
 
